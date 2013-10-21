@@ -1,7 +1,1 @@
 C:\proj\deployBotSample\deployBotSample\bin\Debug\deployBotSample.exe.config
-C:\proj\deployBotSample\bin\Debug\deployBotSample.exe.config
-C:\proj\deployBotSample\bin\Debug\deployBotSample.exe
-C:\proj\deployBotSample\bin\Debug\deployBotSample.pdb
-C:\proj\deployBotSample\obj\Debug\deployBotSample.csprojResolveAssemblyReference.cache
-C:\proj\deployBotSample\obj\Debug\deployBotSample.exe
-C:\proj\deployBotSample\obj\Debug\deployBotSample.pdb
