@@ -46,7 +46,7 @@ namespace deployBotSample
             TcpClient tcpClient = (TcpClient)client;
             NetworkStream clientStream = tcpClient.GetStream();
             ASCIIEncoding encoder = new ASCIIEncoding();
-            byte[] buffer = encoder.GetBytes("Hello Client!");
+            byte[] buffer = encoder.GetBytes("Holy shit they just buffed invoker! :D");
 
             Console.WriteLine("Test");
 
