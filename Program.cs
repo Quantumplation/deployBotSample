@@ -42,7 +42,7 @@ namespace deployBotSample
             TcpClient tcpClient = (TcpClient)client;
             NetworkStream clientStream = tcpClient.GetStream();
             ASCIIEncoding encoder = new ASCIIEncoding();
-            byte[] buffer = encoder.GetBytes("Hello Client! asdfasd");
+            byte[] buffer = encoder.GetBytes("Hello Client! asasd");
 
             clientStream.Write(buffer, 0, buffer.Length);
             clientStream.Flush();
