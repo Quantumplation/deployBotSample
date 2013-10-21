@@ -16,7 +16,11 @@ namespace deployBotSample
 
         static void Main(string[] args)
         {
-            listener = new TcpListener(IPAddress.Any, 31415);
+            var port = 31415;
+            if (args.Count() == 1)
+                port = Int32.Parse(args[0]);
+
+            listener = new TcpListener(IPAddress.Any, port);
             listenThread = new Thread(ListenForClients);
             listenThread.Start();
         }
@@ -32,7 +36,7 @@ namespace deployBotSample
 
                 //create a thread to handle communication 
                 //with connected client
-                Thread clientThread = new Thread(new ParameterizedThreadStart(HandleClientComm));
+                Thread clientThread = new Thread(HandleClientComm);
                 clientThread.Start(client);
             }
         }
