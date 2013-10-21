@@ -44,6 +44,8 @@ namespace deployBotSample
             ASCIIEncoding encoder = new ASCIIEncoding();
             byte[] buffer = encoder.GetBytes("Hello Client! asasd");
 
+            Console.WriteLine("Test");
+
             clientStream.Write(buffer, 0, buffer.Length);
             clientStream.Flush();
 
